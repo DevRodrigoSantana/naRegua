@@ -12,7 +12,6 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 public class AppUser {
-
     @Id
     @GeneratedValue
     @Column(columnDefinition = "CHAR(36)")
