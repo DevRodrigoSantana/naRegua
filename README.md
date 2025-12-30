@@ -43,6 +43,10 @@ Após iniciar a aplicação, acesse:
 
 http://localhost:8080/swagger-ui/index.html
 
+
+![Swagger UI](imgs/swagger.png)
+![Swagger UI](imgs/swagger2.png)
+
 yaml
 Copiar código
 
