@@ -12,7 +12,6 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 public class AppUser {
-
     @Id
     @GeneratedValue
     @Column(columnDefinition = "CHAR(36)")
@@ -29,6 +28,4 @@ public class AppUser {
     public enum Role{
         ROLE_ADMIN,ROLE_CLIENTE,
     }
-
-
 }
