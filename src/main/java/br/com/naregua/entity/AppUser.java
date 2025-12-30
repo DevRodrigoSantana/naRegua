@@ -29,6 +29,4 @@ public class AppUser {
     public enum Role{
         ROLE_ADMIN,ROLE_CLIENTE,
     }
-
-
 }
