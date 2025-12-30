@@ -39,7 +39,7 @@ public class SpringSecurityConfig {
                 )
 
                 .authorizeHttpRequests(auth -> auth
-                        // 🔓 ROTAS PÚBLICAS
+
                         .requestMatchers(HttpMethod.POST, "/api/v1/user").permitAll()
                         .requestMatchers(
                                 HttpMethod.POST,
@@ -47,18 +47,18 @@ public class SpringSecurityConfig {
                                 "/api/v1/auth/refresh"
                         ).permitAll()
 
-                        // 🔓 SWAGGER LIBERADO
+
                         .requestMatchers(
                                 SWAGGER_UI,
                                 SWAGGER_HTML,
                                 SWAGGER_DOCS
                         ).permitAll()
 
-                        // 🔒 QUALQUER OUTRA
+
                         .anyRequest().authenticated()
                 )
 
-                // ⚠️ IMPORTANTE: filtro JWT depois das permissões
+
                 .addFilterBefore(
                         jwtAutorizationFilter,
                         UsernamePasswordAuthenticationFilter.class
